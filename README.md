@@ -20,11 +20,22 @@ Despliegue de Aplicaciones Web
 
 ![Crear Repositorio](./doc/img/Captura%20desde%202023-11-05%2012-00-53.png)
 
+_Crear Repositorio_
+
+<hr></br>
+
 ![Repositorio Creado](./doc/img/Captura%20desde%202023-11-05%2012-02-07.png)
+
+_Repositorio Creado_
+
+<hr></br>
 
 El Programador-1 crea las ramas para el desarrollo, como es un proyecto pequeño se crea una rama "develop" y otra "gh-pages" que es donde se subira el proyecto.
 
-![Creación Ramas](./doc/img/Captura%20desde%202023-11-06%2019-33-27.png)bro
+![Creación Ramas](./doc/img/Captura%20desde%202023-11-06%2019-33-27.png)
+
+_Crear ramas principales trabajo_
+<hr></br>
 
 ### 2- Implementar la Estructura Inicial.
 
@@ -35,9 +46,15 @@ El Programador-1 crea las ramas para el desarrollo, como es un proyecto pequeño
 
 ![Ir a carpeta](./doc/img/Captura%20desde%202023-11-05%2012-07-47.png)
 
-- Utilizamos el comando _git clone URL_del_repositorio_ para clonar el repositorio que hemos creado.</br>
+<hr></br>
+
+- Utilizamos el comando _git clone URL_del_repositorio_ para clonar el repositorio que hemos creado.
+
 
 ![Clonar Repositorio](./doc/img/Captura%20desde%202023-11-05%2012-08-42.png)
+
+_Clonamos el repositorio en local_
+<hr></br>
 
 #### B. Descargar e Integrar el HTML5 BoilerPlate:
 
@@ -49,6 +66,8 @@ El Programador-1 crea las ramas para el desarrollo, como es un proyecto pequeño
 
 ![Descomprimir archivos](./doc/img/Captura%20desde%202023-11-05%2012-18-55.png)
 
+<hr></br>
+
 #### C. Modificar la Estructura:
 
 - El Programador 1 modifica los archivos HTML para incluir la cabecera, barra de navegación, footer y la breve descripción del curso en el home.
@@ -59,7 +78,7 @@ _Inicio del trabajo en Visual Studio Code_
 <hr></br>
 
 ![Modificando el HTML](./doc/img/Captura%20desde%202023-11-05%2019-41-14.png)
-_Escrtura del código_
+_Escritura del código_
 
 <hr></br>
 
@@ -71,6 +90,12 @@ _Visualización en local del resultado_
 - Se realiza el primer commit a la rama "develop" con la estructura inicial de la página principal con la barra de menus y la descripción.
 
 ![Primer commit](./doc/img/Captura%20desde%202023-11-06%2020-39-19.png)
+_Commit del primer cambio_
+
+- Cuando se realiza el primer push tenemos que indicar que vamos a crear la rama en el Repositorio remoto, para ello utilizamos el siguiente comando git *"git push -u origin develpop"* donde develop será la rama que queremos subir.
+
+![Push a Repositorio](./doc/img/Captura%20desde%202023-11-06%2023-16-24.png)
+_Subida al repositorio remoto_
 
 #### D. Git Hooks
 
