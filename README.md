@@ -92,3 +92,7 @@ Crea un archivo llamado commit-msg en la carpeta gitHooks con el siguiente conte
 Este hook verificará si hay archivos con caracteres extraños.</br>Crea un archivo llamado pre-commit en la carpeta gitHooks con el siguiente contenido:
 
 ![Hook3](./doc/img/Captura%20desde%202023-11-05%2021-28-47.png)
+
+- Todo esto lo podemos configurar también con el siguiente comando *"git config core.hookPath ./gitHools"* así tendremos los hooks en el directorio del proyecto.
+
+![Cambiar ruta Hooks](./doc/img/Captura%20desde%202023-11-06%2022-56-18.png)
