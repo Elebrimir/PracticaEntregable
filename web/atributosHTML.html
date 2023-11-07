@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/contHtml.css" />
+    <link rel="stylesheet" href="../css/attHtml.css" />
 
     <meta name="theme-color" content="#fafafa" />
 </head>
@@ -47,19 +47,25 @@
             <a href="./atributosHTML.html">Modificar Atributos HTML</a>
         </nav>
         <article class="explicacion">
-            <h2>innerHTML JAVASCRIPT</h2>
             <p>
-            <blockquote>La propiedad innerHTML de los nodos de tipo elemento nos permite
-                acceder al código HTML comprendido entre las etiquetas de apertura y
-                cierre que definen el nodo y modificarlo si lo deseamos. La aplicación
-                más sencilla puede ser modificar un texto, pero el verdadero potencial
-                de innerHTML es el de modificar el código HTML en sí, no solo el
-                texto.</blockquote>
-            <hr>
-            <h2>LA POTENCIALIDAD DE innerHTML</h2>
-            <blockquote> innerHTML tiene una gran potencialidad debido a que nos permite generar código HTML dinámicamente y esto facilita la manipulación de páginas web y la creación de efectos hasta los límites de nuestra imaginación. Todo ello a pesar de que históricamente no formaba parte del lenguaje JavaScript. Se convirtió es un estándar de facto, es decir, no formando parte de la especificación oficial JavaScript sin embargo fue introducido y aceptado por todos los navegadores.</blockquote>
-            <blockquote>En la próxima entrega del curso veremos un ejemplo más avanzado de utilización de innerHTML para el control dinámico de procesos en el frontEnd. Si el término frontEnd te resulta extraño, ten en cuenta que suele usarse en alusión a código que se ejecuta del lado del cliente, mientras que backEnd suele usarse en alusión a procesos del lado del servidor. El trabajo con JavaScript se califica normalmente de trabajo en el frontEnd de las aplicaciones web.</blockquote>
+                <h2>getElementById</h2>
+            <blockquote>
+                <p>El método getElementById permite, como su nombre indica, seleccionar
+                    un elemento del documento por medio del valor del atributo id que se
+                    le haya asignado. Su sintaxis es la siguiente:</p>
+                <em>document.getElementById('id_del_elemento');</em>
+                <p>Por medio de esta línea
+                    podríamos elegir cualquier elemento cuyo identificador conozcamos para
+                    manipularlo posteriormente. Por ejemplo, por medio de
+                    document.getElementById('contenido') seleccionaríamos el elemento con
+                    id="contenido".</p>
+                <p>Como todo método, getElementById tiene que ser un
+                    método de un objeto; para éste y para todos los métodos que vamos a
+                    ver en esta sección sobre el DOM, el objeto del que dependen es
+                    document.</p>
+            </blockquote>
             </p>
+
         </article>
         <div class="contenido">
             <div class="ejemplo">
@@ -70,11 +76,18 @@
                     <br />
                     &lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;<br />
                     <br />
-                    &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;<br />
+                    &lt;p&gt;JavaScript can change HTML attribute values.&lt;/p&gt;<br />
                     <br />
-                    &lt;button type="button"
-                    onclick='document.getElementById("demo").innerHTML = "Hello
-                    JavaScript!"'&gt;Click Me!&lt;/button&gt;<br />
+                    &lt;button
+                    onclick="document.getElementById('myImage').src='../img/pic_bulbon.gif'"&gt;Turn
+                    on the light&lt;/button&gt;<br />
+                    <br />
+                    &lt;img id="myImage" src="../img/pic_bulboff.gif"
+                    style="width:100px"&gt;<br />
+                    <br />
+                    &lt;button
+                    onclick="document.getElementById('myImage').src='../img/pic_bulboff.gif'"&gt;Turn
+                    off the light&lt;/button&gt;<br />
                     <br />
                     &lt;/body&gt;<br />
                     &lt;/html&gt;<br />
@@ -83,9 +96,22 @@
 
             <div class="ejemplo">
                 <h2>What Can JavaScript Do?</h2>
-                <p id="demo">JavaScript can change HTML content.</p>
-                <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>
-                    Click Me!
+
+                <p>JavaScript can change HTML attribute values.</p>
+
+                <p>
+                    In this case JavaScript changes the value of the src (source)
+                    attribute of an image.
+                </p>
+
+                <button onclick="document.getElementById('myImage').src='../img/pic_bulbon.gif'">
+                    Turn on the light
+                </button>
+
+                <img id="myImage" src="../img/pic_bulboff.gif" style="width: 100px" />
+
+                <button onclick="document.getElementById('myImage').src='../img/pic_bulboff.gif'">
+                    Turn off the light
                 </button>
             </div>
         </div>
