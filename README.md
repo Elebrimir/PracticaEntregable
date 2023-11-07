@@ -210,3 +210,13 @@ Una vez terminado el desarrollo se sube al repositorio y se crea el pull request
 
 <hr></br>
 
+### 5.Tareas Finales
+
+#### A.Revisar trabajo de la rama Develop
+
+Cuando el Programador 1 tiene toda la implementación en la rama *develop* realiza los ajustes finales y crea la rama *test* para que los testers realizen las pruebas.
+Además, ser etiquetará como versión 1.0
+
+![Revision](./doc/img/Captura%20desde%202023-11-08%2000-06-21.png)
+
+<hr></br>
