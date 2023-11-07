@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="Practica Despliegue Aplicaciones Web DAW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="Despliegue 2nd" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet" />
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/attHtml.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+</head>
+<!-- Add your site or application content here -->
+
+<body>
+    <header>
+        <div class="content">
+            <hgroup>
+                <h1>CURSO DE JAVASCRIPT</h1>
+                <i>Curso de javascript aplicado a interacciones con elementos HTML</i>
+            </hgroup>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <section class="site">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./contenidoHTML.html">Modificar Contenido HTML</a>
+            <a href="./estilosCSS.html">Modificar Estilos CSS</a>
+            <a href="./atributosHTML.html">Modificar Atributos HTML</a>
+        </nav>
+        <article class="explicacion">
+            <p>
+                <h2>getElementById</h2>
+            <blockquote>
+                <p>El método getElementById permite, como su nombre indica, seleccionar
+                    un elemento del documento por medio del valor del atributo id que se
+                    le haya asignado. Su sintaxis es la siguiente:</p>
+                <em>document.getElementById('id_del_elemento');</em>
+                <p>Por medio de esta línea
+                    podríamos elegir cualquier elemento cuyo identificador conozcamos para
+                    manipularlo posteriormente. Por ejemplo, por medio de
+                    document.getElementById('contenido') seleccionaríamos el elemento con
+                    id="contenido".</p>
+                <p>Como todo método, getElementById tiene que ser un
+                    método de un objeto; para éste y para todos los métodos que vamos a
+                    ver en esta sección sobre el DOM, el objeto del que dependen es
+                    document.</p>
+            </blockquote>
+            </p>
+
+        </article>
+        <div class="contenido">
+            <div class="ejemplo">
+                <p>
+                    &lt;!DOCTYPE html&gt;<br />
+                    &lt;html&gt;<br />
+                    &lt;body&gt;<br />
+                    <br />
+                    &lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;<br />
+                    <br />
+                    &lt;p&gt;JavaScript can change HTML attribute values.&lt;/p&gt;<br />
+                    <br />
+                    &lt;button
+                    onclick="document.getElementById('myImage').src='../img/pic_bulbon.gif'"&gt;Turn
+                    on the light&lt;/button&gt;<br />
+                    <br />
+                    &lt;img id="myImage" src="../img/pic_bulboff.gif"
+                    style="width:100px"&gt;<br />
+                    <br />
+                    &lt;button
+                    onclick="document.getElementById('myImage').src='../img/pic_bulboff.gif'"&gt;Turn
+                    off the light&lt;/button&gt;<br />
+                    <br />
+                    &lt;/body&gt;<br />
+                    &lt;/html&gt;<br />
+                </p>
+            </div>
+
+            <div class="ejemplo">
+                <h2>What Can JavaScript Do?</h2>
+
+                <p>JavaScript can change HTML attribute values.</p>
+
+                <p>
+                    In this case JavaScript changes the value of the src (source)
+                    attribute of an image.
+                </p>
+
+                <button onclick="document.getElementById('myImage').src='../img/pic_bulbon.gif'">
+                    Turn on the light
+                </button>
+
+                <img id="myImage" src="../img/pic_bulboff.gif" style="width: 100px" />
+
+                <button onclick="document.getElementById('myImage').src='../img/pic_bulboff.gif'">
+                    Turn off the light
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                HTML5 Boilerplate Copyright © 2023 - All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments);
+        };
+        ga.q = [];
+        ga.l = +new Date();
+        ga("create", "UA-XXXXX-Y", "auto");
+        ga("set", "anonymizeIp", true);
+        ga("set", "transport", "beacon");
+        ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>

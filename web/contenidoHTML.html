@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="Practica Despliegue Aplicaciones Web DAW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="Despliegue 2nd" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet" />
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/contHtml.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+</head>
+<!-- Add your site or application content here -->
+
+<body>
+    <header>
+        <div class="content">
+            <hgroup>
+                <h1>CURSO DE JAVASCRIPT</h1>
+                <i>Curso de javascript aplicado a interacciones con elementos HTML</i>
+            </hgroup>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <section class="site">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./contenidoHTML.html">Modificar Contenido HTML</a>
+            <a href="./estilosCSS.html">Modificar Estilos CSS</a>
+            <a href="./atributosHTML.html">Modificar Atributos HTML</a>
+        </nav>
+        <article class="explicacion">
+            <h2>innerHTML JAVASCRIPT</h2>
+            <p>
+            <blockquote>La propiedad innerHTML de los nodos de tipo elemento nos permite
+                acceder al código HTML comprendido entre las etiquetas de apertura y
+                cierre que definen el nodo y modificarlo si lo deseamos. La aplicación
+                más sencilla puede ser modificar un texto, pero el verdadero potencial
+                de innerHTML es el de modificar el código HTML en sí, no solo el
+                texto.</blockquote>
+            <hr>
+            <h2>LA POTENCIALIDAD DE innerHTML</h2>
+            <blockquote> innerHTML tiene una gran potencialidad debido a que nos permite generar código HTML dinámicamente y esto facilita la manipulación de páginas web y la creación de efectos hasta los límites de nuestra imaginación. Todo ello a pesar de que históricamente no formaba parte del lenguaje JavaScript. Se convirtió es un estándar de facto, es decir, no formando parte de la especificación oficial JavaScript sin embargo fue introducido y aceptado por todos los navegadores.</blockquote>
+            <blockquote>En la próxima entrega del curso veremos un ejemplo más avanzado de utilización de innerHTML para el control dinámico de procesos en el frontEnd. Si el término frontEnd te resulta extraño, ten en cuenta que suele usarse en alusión a código que se ejecuta del lado del cliente, mientras que backEnd suele usarse en alusión a procesos del lado del servidor. El trabajo con JavaScript se califica normalmente de trabajo en el frontEnd de las aplicaciones web.</blockquote>
+            </p>
+        </article>
+        <div class="contenido">
+            <div class="ejemplo">
+                <p>
+                    &lt;!DOCTYPE html&gt;<br />
+                    &lt;html&gt;<br />
+                    &lt;body&gt;<br />
+                    <br />
+                    &lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;<br />
+                    <br />
+                    &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;<br />
+                    <br />
+                    &lt;button type="button"
+                    onclick='document.getElementById("demo").innerHTML = "Hello
+                    JavaScript!"'&gt;Click Me!&lt;/button&gt;<br />
+                    <br />
+                    &lt;/body&gt;<br />
+                    &lt;/html&gt;<br />
+                </p>
+            </div>
+
+            <div class="ejemplo">
+                <h2>What Can JavaScript Do?</h2>
+                <p id="demo">JavaScript can change HTML content.</p>
+                <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>
+                    Click Me!
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                HTML5 Boilerplate Copyright © 2023 - All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments);
+        };
+        ga.q = [];
+        ga.l = +new Date();
+        ga("create", "UA-XXXXX-Y", "auto");
+        ga("set", "anonymizeIp", true);
+        ga("set", "transport", "beacon");
+        ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>

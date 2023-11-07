@@ -1,0 +1,38 @@
+.contenido {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-color: #333;
+}
+
+.ejemplo {
+  width: 45%;
+  height: 550px;
+  background-color: azure;
+  position: absolute;
+  text-align: left;
+}
+
+.explicacion{
+    text-align: left;
+    margin: 2em;
+}
+
+.ejemplo p {
+  margin: 2em;
+}
+.ejemplo h2 {
+  margin: 2em;
+}
+.ejemplo button {
+  margin: 2em;
+}
+
+.ejemplo:nth-child(1) {
+  top: 25px;
+  left: 2.5%;
+}
+.ejemplo:nth-child(2) {
+  top: 25px;
+  left: 52.5%;
+}
