@@ -220,3 +220,16 @@ Además, ser etiquetará como versión 1.0
 ![Revision](./doc/img/Captura%20desde%202023-11-08%2000-06-21.png)
 
 <hr></br>
+
+![Test](./doc/img/Captura%20desde%202023-11-08%2000-19-55.png)
+
+<hr></br>
+
+Podemos ver tambien el trabajo de las ramas con sus commits con el GitGraph
+
+![GitGraph](./doc/img/Captura%20desde%202023-11-08%2000-24-47.png)
+
+#### B. Subir el proyecto a gh-Pages
+
+Por ultimo se sube el proyecto a gh-Pages
+
